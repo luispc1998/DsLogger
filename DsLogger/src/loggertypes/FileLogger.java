@@ -25,7 +25,7 @@ public class FileLogger implements ILogger {
 		try {
 			writer = new PrintWriter(new BufferedWriter(new FileWriter(logFile, true)));
 
-			writer.println(msg + "\n");
+			writer.println(msg);
 
 		} catch (IOException e) {
 			e.printStackTrace();

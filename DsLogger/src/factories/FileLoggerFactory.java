@@ -1,13 +1,30 @@
 package factories;
 
-public class FileLoggerFactory {
+import interfaces.ILogger;
+import interfaces.LoggerFactory;
+import loggertypes.FileLogger;
 
-	private String configFile;
+public class FileLoggerFactory implements LoggerFactory{
+
+	private String logFile;
 	
-	public FileLoggerFactory(String configFile) {
-		this.configFile=configFile;
+	/**
+	 * It's here because of reflection purposes
+	 * SHOULD NOT BE CALLED IN NORMAL EXECUTION
+	 */
+	public FileLoggerFactory() {}
+	
+	/**
+	 * Constructor for the class
+	 * @param data A class to access easily the configutarion file properties
+	 */
+	public FileLoggerFactory(ConfModificated data) {
+		this.logFile=data.getProperty("LOGFILE");
 	}
-	
-	
+
+	@Override
+	public ILogger createLogger() {
+		return new FileLogger(logFile);
+	}
 	
 }
