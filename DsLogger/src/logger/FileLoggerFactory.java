@@ -1,8 +1,7 @@
-package factories;
+package logger;
 
 import interfaces.ILogger;
 import interfaces.LoggerFactory;
-import loggertypes.FileLogger;
 
 public class FileLoggerFactory implements LoggerFactory{
 

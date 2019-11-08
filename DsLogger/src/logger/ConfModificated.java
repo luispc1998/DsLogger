@@ -1,4 +1,4 @@
-package factories;
+package logger;
 
 import java.io.IOException;
 import java.util.Properties;

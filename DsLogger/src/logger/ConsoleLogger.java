@@ -1,8 +1,8 @@
-package loggertypes;
+package logger;
 
 import interfaces.ILogger;
 
-public class ConsoleLogger implements ILogger{
+class ConsoleLogger implements ILogger{
 
 	@Override
 	public void log(String msg) {

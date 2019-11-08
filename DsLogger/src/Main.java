@@ -1,5 +1,5 @@
 import interfaces.ILogger;
-import loggertypes.LoggerSingleton;
+import logger.LoggerSingleton;
 
 public class Main {
 

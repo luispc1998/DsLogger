@@ -1,4 +1,4 @@
-package loggertypes;
+package logger;
 import FactoryParser.LoggerFileParser;
 import interfaces.ILogger;
 import interfaces.LoggerFactory;

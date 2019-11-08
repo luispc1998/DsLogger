@@ -1,4 +1,4 @@
-package loggertypes;
+package logger;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 
 import interfaces.ILogger;
 
-public class FileLogger implements ILogger {
+class FileLogger implements ILogger {
 
 	private String logFile;
 

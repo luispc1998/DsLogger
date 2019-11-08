@@ -2,8 +2,8 @@ package FactoryParser;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
-import factories.ConfModificated;
 import interfaces.LoggerFactory;
+import logger.ConfModificated;
 
 public class LoggerFileParser {
 
